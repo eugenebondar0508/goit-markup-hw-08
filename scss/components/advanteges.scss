@@ -1,0 +1,82 @@
+@import "../variables.scss";
+
+.advantages {
+    @media screen and (max-width: 1200px) {
+    padding: 0;
+    }
+    padding-bottom: 0;
+
+    &-list {
+        display: flex;
+        @media screen and (max-width: 1200px) {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 64px;
+            column-gap: 24px;
+            padding: 96px 0;
+        }
+
+        @media screen and (max-width: 767px) {
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+        }
+    }
+
+    &-item {
+        list-style: none;
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 767px) {
+            align-items: center;
+            justify-content: center;
+            width: 390px;
+        }
+    }
+    &-item:not(:last-child) {
+        margin-right: 30px;
+        @media screen and (max-width: 1200px) {
+            margin-right: 0}
+    }
+
+    &-title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: $navy-blue;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 767px) {
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 40px;
+                letter-spacing: 0.02em;
+        }
+    }
+
+    &-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+    }
+}
+
+.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+  
+    background-color: $cloud;
+  }

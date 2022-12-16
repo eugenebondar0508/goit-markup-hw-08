@@ -1,0 +1,52 @@
+.filteres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 90px;
+}
+
+.filter-item {
+  list-style: none;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  color: #4D5AE5;
+  background-color: #F4F4FD;
+  border: 1px solid #E7E9FC;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: none;
+}
+
+.filter-btn:hover, .filter-btn:focus {
+  color: #ffffff;
+  background-color: #4D5AE5;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(46, 47, 66, 0.16);
+          box-shadow: 1px 1px 1px 1px rgba(46, 47, 66, 0.16);
+}
+
+.portfolio-title {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=filteres.css.map */

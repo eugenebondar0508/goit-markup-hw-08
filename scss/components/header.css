@@ -1,0 +1,29 @@
+.header {
+  padding: 25px 0;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(46, 47, 66, 0.16);
+          box-shadow: 1px 1px 1px 1px rgba(46, 47, 66, 0.16);
+}
+
+@media screen and (max-width: 767px) {
+  .header .container {
+    margin: 0;
+    padding-left: 15px;
+  }
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .header__container {
+    margin: 0;
+    padding-left: 15px;
+  }
+}
+/*# sourceMappingURL=header.css.map */

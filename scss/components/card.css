@@ -1,0 +1,21 @@
+.card-link {
+  display: block;
+  text-decoration: none;
+}
+
+.card-link:hover, .card-link:focus {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card-link:hover .gallery-card-info {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.card-link:focus .gallery-card-info {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+/*# sourceMappingURL=card.css.map */

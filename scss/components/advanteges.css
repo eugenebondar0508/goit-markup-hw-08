@@ -1,0 +1,125 @@
+.advantages {
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .advantages {
+    padding: 0;
+  }
+}
+
+.advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .advantages-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    row-gap: 64px;
+    -webkit-column-gap: 24px;
+            column-gap: 24px;
+    padding: 96px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-list {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.advantages-item {
+  list-style: none;
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 390px;
+  }
+}
+
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .advantages-item:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+.advantages-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2E2F42;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.advantages-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-text {
+    width: 100%;
+  }
+}
+
+.icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #F4F4FD;
+}
+/*# sourceMappingURL=advanteges.css.map */

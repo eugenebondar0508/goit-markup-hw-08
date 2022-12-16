@@ -1,0 +1,23 @@
+@import "../variables.scss";
+
+.header {
+    padding: 25px 0;
+    box-shadow: 1px 1px 1px 1px rgba(46, 47, 66, 0.16);
+
+    .container {
+        @media screen and (max-width: 767px) {
+            margin: 0;
+            padding-left: 15px;
+        }    
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 767px) {
+                margin: 0;
+                padding-left: 15px;
+        }
+    }
+}

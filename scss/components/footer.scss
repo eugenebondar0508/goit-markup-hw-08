@@ -1,0 +1,132 @@
+@import "../variables.scss";
+
+.footer {
+    padding: 100px 0;
+    background-color: $navy-blue;
+
+    &__container {
+        display: flex;
+
+        @media screen and (max-width: 1200px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 24px;
+            row-gap: 72px;
+            padding: 0;
+        }
+
+        @media screen and (max-width: 767px) {
+            padding: 0
+        }
+    }
+
+    &-info {
+        margin-right: 120px;
+        @media screen and (max-width: 1200px) {
+            margin-right: 0;
+        }
+
+        @media screen and (max-width: 767px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        }
+    }
+    &-links {
+        .link {
+            background-color: rgba(255, 255, 255, 0.1);
+            --color3: #ffffff;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    &-links:not(:last-child) {
+        margin-right: auto;
+        @media screen and (max-width: 1200px) {
+             margin-right: 0;
+        }
+    }
+
+    &-links:last-child{
+        @media screen and (max-width: 1200px) {
+             margin-left: -30px;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin-left: 0;
+        }
+    }
+
+    &-links {
+        .item:not(:last-child) {
+            margin-right: 16px;
+        }
+
+        @media screen and (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center
+        }    
+    }
+
+    &-links {
+        .link:hover {
+            cursor: pointer;
+            background-color: #31D0AA;
+            fill: #ffffff;
+        }
+    }
+
+    &-links-title {
+        font-style: 16px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        color: $primary-bg-color;
+        margin-bottom: 16px;
+    }
+
+
+    &-logo {
+        color: $primary-bg-color;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 767px) {
+            margin: 0;
+        }
+    }
+
+    &-text {
+        width: 265px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: $cornflower;
+        margin-top: 16px;
+    }
+
+    &-btn {
+        width: 168px;
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 10px 24px;
+        background-color: $iris;
+        color: $primary-bg-color;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 0.06em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &-btn:hover,
+    &-btn:focus {
+        cursor: pointer;
+        box-shadow: 1px 1px 1px 1px rgba(46, 47, 66, 0.16);
+    }
+}

@@ -1,0 +1,29 @@
+@media screen and (max-width: 1200px) {
+  .work {
+    display: none;
+  }
+}
+
+.work-title {
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #2E2F42;
+}
+
+.work-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work-item {
+  list-style: none;
+}
+
+.work-item:not(:last-child) {
+  margin-right: 24px;
+}
+/*# sourceMappingURL=work.css.map */

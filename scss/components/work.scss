@@ -1,0 +1,27 @@
+@import "../variables.scss";
+
+.work {
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+    &-title {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: $navy-blue;
+    }
+
+    &-list {
+        display: flex;
+    }
+
+    &-item {
+        list-style: none;
+    }
+
+    &-item:not(:last-child) {
+        margin-right: 24px;
+    }
+}
